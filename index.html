@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Photo, Audio, and Background</title>
+</head>
+<body>
+    <h1>Upload a Photo, Audio, and an Optional Background to Generate a Video</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label>Upload Photo (must contain a face):</label>
+        <input type="file" name="photo" accept="image/*" required><br><br>
+        <label>Upload Audio:</label>
+        <input type="file" name="audio" accept="audio/*" required><br><br>
+        <label>Upload Background (optional):</label>
+        <input type="file" name="background" accept="image/*"><br><br>
+        <button type="submit">Generate Video</button>
+    </form>
+</body>
+</html>
